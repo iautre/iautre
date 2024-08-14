@@ -5,11 +5,11 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: '22.6.0'                # set this to the node version to use
+  NODE_VERSION: '22'                # set this to the node version to use
 
 jobs:
   build:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
 
@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
 
-    - name: npm install, build, and test
+    - name: npm install, build
       run: |
         npm install
         npm run docs:build
