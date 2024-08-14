@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Autre Coding",
   description: "Autre Coding",
-  outDir: '../public',
-  assetsDir: 'static',
+  // outDir: '../dist',
+  // assetsDir: 'static',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
