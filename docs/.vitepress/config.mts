@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Autre Coding",
   // outDir: '../dist',
   // assetsDir: 'static',
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
